@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Computing Hackathon</title>
+</head>
+<body>
+
+    <!-- 1. Semantic Structure: Header with h1 and tagline -->
+    <header>
+        <h1>Mobile Computing Hackathon 2026</h1>
+        <p>Innovate the Future of Mobile Applications</p>
+    </header>
+
+    <!-- Navigation with internal links to sections -->
+    <nav>
+        <ul>
+            <li><a href="#about">About the Event</a></li>
+            <li><a href="#schedule">Event Schedule</a></li>
+            <li><a href="#register">Registration</a></li>
+        </ul>
+    </nav>
+
+    <!-- First section: About the Event -->
+    <section id="about">
+        <h2>About the Event</h2>
+        
+        <!-- Two article elements introducing activities -->
+        <article>
+            <h3>Java App Development Workshop</h3>
+            <p>Join our hands-on workshop focused on developing, compiling, and testing Java programs using NetBeans IDE.</p>
+        </article>
+        
+        <article>
+            <h3>UI/UX Prototyping Challenge</h3>
+            <p>Compete in a fast-paced design challenge to build intuitive mobile application wireframes using Figma.</p>
+        </article>
+    </section>
+
+    <!-- Second section: Event Schedule Table -->
+    <section id="schedule">
+        <h2>Event Schedule</h2>
+        
+        <!-- Table with border and header cells -->
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+                <th>Venue</th>
+                <th>Person in Charge</th>
+            </tr>
+            
+            <!-- Row 1 -->
+            <tr>
+                <td>08:00 AM</td>
+                <td>Registration & Breakfast</td>
+                <td rowspan="2">Main Auditorium</td> <!-- rowspan used here for consecutive sessions -->
+                <td>Committee Members</td>
+            </tr>
+            
+            <!-- Row 2 -->
+            <tr>
+                <td>09:00 AM</td>
+                <td>Opening Keynote</td>
+                <!-- Venue inherited from rowspan -->
+                <td>Dr. Dr Amir Ngah</td>
+            </tr>
+            
+            <!-- Row 3 -->
+            <tr>
+                <td>10:30 AM</td>
+                <td>Java Software Development Workshop</td>
+                <td>Cisco</td>
+                <td>Dr Waheed </td>
+            </tr>
+            
+            <!-- Row 4 -->
+            <tr>
+                <td>12:30 PM</td>
+                <td colspan="3" align="center">Lunch Break</td> <!-- colspan used here across 3 columns -->
+            </tr>
+            
+            <!-- Row 5 -->
+            <tr>
+                <td>02:00 PM</td>
+                <td>Figma Interface Prototyping</td>
+                <td rowspan="2">Cisco</td> <!-- rowspan used here -->
+                <td>Dr Che Akmal</td>
+            </tr>
+            
+            <!-- Row 6 -->
+            <tr>
+                <td>04:00 PM</td>
+                <td>Project Presentations & Closing</td>
+                <!-- Venue inherited from rowspan -->
+                <td>Judging Panel</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Third section: Registration Form -->
+    <section id="register">
+        <h2>Registration</h2>
+        
+        <!-- Form with post method and action -->
+        <form action="register.html" method="post">
+            
+            <!-- Text inputs with matching label 'for' and input 'id' -->
+            <p>
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="e.g., Muhammad Nabil Irfan">
+            </p>
+            <p>
+                <label for="matricNum">Matric Number:</label>
+                <input type="text" id="matricNum" name="matricNum" placeholder="e.g., S79698">
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="e.g., nabilirfan0532@gmail.com">
+            </p>
+
+            <!-- Radio buttons for Year of Study -->
+            <p>Year of Study:</p>
+            <input type="radio" id="year1" name="studyYear" value="1">
+            <label for="year1">Year 1</label><br>
+            <input type="radio" id="year2" name="studyYear" value="2" checked>
+            <label for="year2">Year 2</label><br>
+            <input type="radio" id="year3" name="studyYear" value="3">
+            <label for="year3">Year 3</label><br>
+            <input type="radio" id="year4" name="studyYear" value="4">
+            <label for="year4">Year 4</label>
+
+            <!-- Checkboxes for sessions (at least 3 choices) -->
+            <p>Sessions to Join:</p>
+            <input type="checkbox" id="session1" name="sessions" value="keynote">
+            <label for="session1">Opening Keynote</label><br>
+            <input type="checkbox" id="session2" name="sessions" value="java_workshop">
+            <label for="session2">Java Software Development Workshop</label><br>
+            <input type="checkbox" id="session3" name="sessions" value="figma_workshop">
+            <label for="session3">Figma Interface Prototyping</label><br>
+            <input type="checkbox" id="session4" name="sessions" value="presentations">
+            <label for="session4">Project Presentations & Closing</label>
+
+            <!-- Drop-down list for Programme -->
+            <p>
+                <label for="programme">Programme:</label>
+                <select id="programme" name="programme">
+                    <option value="mobile_computing">Bachelor of Computer Science (Mobile Computing)</option>
+                    <option value="software_engineering">Bachelor of Computer Science (Software Engineering)</option>
+                    <option value="cloud_computing">Bachelor of Computer Science (Cloud Computing)</option>
+                    <option value="maritime_informatics">Bachelor of Computer Science (Maritime Informatics)</option>
+                </select>
+            </p>
+
+            <!-- Submit button -->
+            <p>
+                <input type="submit" value="Register Now">
+            </p>
+            
+        </form>
+    </section>
+
+    <!-- Footer with organiser name and copyright symbol -->
+    <footer>
+        <p>&copy; 2026 Hackathon UMT Secretariat</p>
+    </footer>
+
+</body>
+</html>
