@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab Exercise 3 - Wonderbuuk</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .section-box { padding: 15px; margin: 15px 0; border-radius: 8px; border: 1px solid #cbd5e1; }
+        #header { background-color: #1e3a8a; color: white; }
+        #contact-form { background-color: #f8fafc; }
+        #calculator { background-color: #f0fdf4; }
+        #footer { background-color: #0f766e; color: white; text-align: center; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Div -->
+    <div id="header" class="section-box">
+        <h1>Wonderbuuk</h1> <!-- Block element -->
+        <span>Your Ultimate Online Reading Companion</span> <!-- Inline element -->
+    </div>
+
+    <!-- Contact Form Div -->
+    <div id="contact-form" class="section-box">
+        <h2>Contact Form</h2>
+        <form>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required autofocus><br><br>
+
+            <label for="contact-date">Preferred Contact Date:</label><br>
+            <input type="date" id="contact-date" name="contactDate" required><br><br>
+
+            <label for="satisfaction">Satisfaction Level (0-10):</label><br>
+            <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" step="1" value="5"><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- Calculator Div -->
+    <div id="calculator" class="section-box">
+        <h2>Inline Calculator</h2>
+        <form oninput="result.value = parseInt(num1.value) + parseInt(num2.value)">
+            <input type="number" id="num1" value="10"> +
+            <input type="number" id="num2" value="20"> =
+            <output name="result" for="num1 num2">30</output>
+        </form>
+    </div>
+
+    <!-- Footer Div -->
+    <div id="footer" class="section-box">
+        <p>Contact Support: support@wonderbuuk.com | Website is property of WONDERBUUK &copy; 2026</p> <!-- &copy; entity used -->
+    </div>
+
+</body>
+</html>
