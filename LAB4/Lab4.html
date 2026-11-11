@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4 - CSF3133</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #intro {
+            text-align: center;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Faculty of Computer Science and Mathematics, UMT</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#article-section">Article</a></li>
+            <li><a href="#media-section">Media</a></li>
+            <li><a href="#form-section">Form</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="article-section">
+            <article>
+                <h2 id="intro">Mobile Computing Profile</h2>
+                <p class="content-text">Welcome to the student profile of Muhammad Nabil Irfan bin Muhamad Razi. This page utilizes semantic web structure tags to explicitly describe the layout components to the browser.</p>
+            </article>
+        </section>
+
+        <section id="media-section">
+            <h2>Video Media</h2>
+            <figure>
+                <video width="400" height="300" controls>
+                    <source src="video.mp4" type="video/mp4">
+                    Pelayar anda tidak menyokong tag video.
+                </video>
+                <figcaption>Caption: Example video fitting the design requirements.</figcaption>
+            </figure>
+        </section>
+
+        <section id="form-section">
+            <h2>Registration Form</h2>
+            <form action="#" method="post" class="styled-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="Muhammad Nabil Irfan bin Muhamad Razi" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="nabilirfan0532@gmail.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <label><input type="radio" name="gender" value="male" checked> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Favourite hobbies:</label>
+                    <label><input type="checkbox" name="hobbies" value="music" checked> Music Production</label>
+                    <label><input type="checkbox" name="hobbies" value="gaming" checked> E-Sports (PUBG/PES)</label>
+                    <label><input type="checkbox" name="hobbies" value="design" checked> Graphic Design</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <address>
+            Contact: <a href="mailto:nabilirfan0532@gmail.com">nabilirfan0532@gmail.com</a>
+        </address>
+        <p>&copy; 2026 Universiti Malaysia Terengganu</p>
+    </footer>
+</body>
+</html>
