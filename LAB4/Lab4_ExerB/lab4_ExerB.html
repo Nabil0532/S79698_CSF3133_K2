@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-Café Campus</title>
+    <!-- External stylesheet linked here -->
+    <link rel="stylesheet" href="cafe.css">
+    <style type="text/css">
+        /* Internal styles retained for elements non-specific to navigation/extensions */
+        h1 {text-decoration: overline;}
+        p {color: #333333; text-align: justify;}
+        #intro {
+            font-size: 18px;
+            background-color: #FDEBD0;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+    <!-- Error 1 (Line 7): Invalid HTML comment inside CSS. Changed to /* ... */ -->
+    <!-- Error 2 (Line 9): list-style-type was set to 'no'. Changed to 'none' -->
+    <!-- Error 3 (Lines 13-16): Link states were out of order. Reordered to LVHA (:link, :visited, :hover, :active) -->
+    <!-- Error 4 (Line 18): Missing colon in p tag color property. Fixed to 'color: #333333;' -->
+    <!-- Error 5 (Line 21): Missing closing brace '}' for #intro selector -->
+    <!-- Error 6 (Line 22): Missing period for class selector. Fixed 'highlight' to '.highlight' -->
+    <!-- Error 7 (Line 35): Broken href anchor. Changed 'href="menu"' to 'href="#menu"' -->
+    <!-- Error 8 (Lines 42, 46): Duplicate ID 'item' on articles. Changed to class="item" -->
+    <!-- Error 9 (Line 54): Incorrect MIME type. Changed 'type="mp4"' to 'type="video/mp4"' -->
+
+    <header>
+        <h1>e-Café Campus</h1>
+        <!-- Submitted by: Muhammad Nabil Irfan bin Muhamad Razi | Matric Num: S79698 -->
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="menu">
+        <h2>Today's Menu</h2>
+        <p id="intro">Freshly brewed coffee and local delights every day.</p>
+        
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+            <!-- Implemented old-price and new price structure -->
+            <p>Only <span class="old-price">RM 4.50</span> <span class="highlight">RM 3.50</span></p>
+        </article>
+        
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+            <p>Only <span class="old-price">RM 6.00</span> <span class="highlight">RM 5.00</span></p>
+        </article>
+    </section>
+    
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="video_kopi.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Behind the scenes at e-Café Campus</figcaption>
+        </figure>
+    </section>
+
+    <!-- New Feedback Section Extended -->
+    <section id="feedback">
+        <h2>Customer Feedback</h2>
+        <form class="feedback-form">
+            <label>Name: <input type="text" name="customer_name" required></label><br><br>
+            
+            <label>E-mail: <input type="email" name="customer_email" required></label><br><br>
+            
+            <p>Visit Type:</p>
+            <label><input type="radio" name="visit" value="Dine-in"> Dine-in</label>
+            <label><input type="radio" name="visit" value="Take-away"> Take-away</label><br><br>
+            
+            <p>Favourite Items:</p>
+            <label><input type="checkbox" name="fav" value="Coffee"> Coffee</label>
+            <label><input type="checkbox" name="fav" value="Pastries"> Pastries</label>
+            <label><input type="checkbox" name="fav" value="Local Food"> Local Food</label><br><br>
+            
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </section>
+    
+    <footer id="contact">
+        <p>&copy; 2026 e-Café Campus</p>
+        <address>
+            Email us directly: <a href="mailto:nabilirfan0532@gmail.com">nabilirfan0532@gmail.com</a>
+        </address>
+    </footer>
+</body>
+</html>
