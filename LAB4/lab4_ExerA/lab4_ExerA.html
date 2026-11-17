@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Terengganu</title>
+    <link rel="stylesheet" href="Lab4ExerA_style.css">
+    <style>
+        /* Internal CSS for page-specific styling */
+        body { 
+            font-family: Arial, sans-serif; 
+            background-color: #f9f9f9; 
+        }
+        h1 { 
+            text-align: center; 
+            color: #2c3e50; 
+            text-decoration: overline; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Explore Terengganu</h1>
+        <!-- Submitted by: Muhammad Nabil Irfan bin Muhamad Razi | Matric Num: S79698 -->
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#video">Promo Video</a></li>
+            <li><a href="#trip">Book a Trip</a></li>
+        </ul>
+    </nav>
+    
+    <section id="destinations">
+        <h2>Top Destinations</h2>
+        
+        <article class="card">
+            <h3>Pulau Redang</h3>
+            <p>Experience crystal clear waters, vibrant marine life, and pristine white sandy beaches.</p>
+            <p class="price"><span class="old-price">RM 399</span> RM 299</p>
+        </article>
+        
+        <article class="card">
+            <h3>Pasar Payang</h3>
+            <p>Shop for traditional Terengganu batik, silk, and local delicacies.</p>
+            <p class="price"><span class="old-price">RM 150</span> RM 100</p>
+        </article>
+        
+        <article class="card">
+            <h3>Masjid Kristal</h3>
+            <p>Visit the iconic modern mosque crafted entirely from steel, glass, and crystal.</p>
+            <p class="price"><span class="old-price">RM 80</span> RM 50</p>
+        </article>
+        
+        <p>Current Trip Seats Filled:</p>
+        <meter min="0" max="40" value="28">28/40</meter>
+    </section>
+    
+    <section id="video">
+        <h2>Watch Our Story</h2>
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="video_terengganu.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Discover the beauty and culture of Terengganu</figcaption>
+        </figure>
+    </section>
+    
+    <section id="trip">
+        <h2>Register Your Interest</h2>
+        <form class="trip-form">
+            <label>Name: <input type="text" name="name" required></label><br><br>
+            
+            <label>E-mail: <input type="email" name="email" required></label><br><br>
+            
+            <p>Traveller Type:</p>
+            <label><input type="radio" name="type" value="Student"> Student</label>
+            <label><input type="radio" name="type" value="Staff"> Staff</label>
+            <label><input type="radio" name="type" value="Public"> Public</label><br><br>
+            
+            <p>Interests:</p>
+            <label><input type="checkbox" name="interest" value="Islands"> Islands</label>
+            <label><input type="checkbox" name="interest" value="Food"> Food</label>
+            <label><input type="checkbox" name="interest" value="Culture"> Culture</label>
+            <label><input type="checkbox" name="interest" value="Nature"> Nature</label><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Visit Terengganu</p>
+        <address>
+            Contact us for bookings at: <a href="mailto:nabilirfan0532@gmail.com">nabilirfan0532@gmail.com</a>
+        </address>
+    </footer>
+</body>
+</html>
