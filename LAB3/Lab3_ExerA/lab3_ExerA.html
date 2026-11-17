@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Campus Bakery Online Order</title>
+</head>
+<body>
+    <!-- 1. Page Structure: header, nav, content, sidebar, footer -->
+    <div id="header">
+        <!-- 2. Header with bakery name and slogan inside a span -->
+        <h1>CampusBake&reg; <span>Freshly baked for students!</span></h1>
+    </div>
+
+    <div id="nav">
+        <!-- 2. Navigation with 3 inline links separated by | -->
+        <a href="#home">Home</a> |
+        <a href="#menu">Menu</a> |
+        <a href="#order">Order Now</a>
+    </div>
+
+    <div id="sidebar">
+        <!-- 4. HTML Entities: Price list in sidebar -->
+        <h2>Price List</h2>
+        <ul>
+            <li>Cupcake: RM 3.00</li>
+            <li>Cake Slice: RM 5.00</li>
+        </ul>
+        <p>Special: Orders &gt; 10 pieces get a free drink!</p>
+    </div>
+
+    <div id="content">
+        <!-- 3. Block and Inline Elements -->
+        <h2>Welcome to Our Bakery</h2>
+        <p>
+            We offer the <strong>best</strong> cakes on campus. Try our <em>signature</em> flavours today! <a href="#order"><span>Order below.</span></a>
+        </p>
+
+        <!-- 5. Order Form (HTML5 Elements) -->
+        <div>
+            <h2>Order Form</h2>
+            <form oninput="total.value = (cupcakes.value * 3) + (slices.value * 5)">
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" name="customerName" placeholder="Enter your name" required autofocus><br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required><br>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="pickupDate">Pick-up Date:</label>
+                <input type="date" id="pickupDate" name="pickupDate"><br>
+
+                <label for="pickupTime">Pick-up Time:</label>
+                <input type="time" id="pickupTime" name="pickupTime"><br>
+
+                <label for="flavour">Flavour:</label>
+                <input list="flavours" id="flavour" name="flavour">
+                <datalist id="flavours">
+                    <option value="Double Chocolate">
+                    <option value="Vanilla Bean">
+                    <option value="Red Velvet">
+                    <option value="Strawberry Matcha">
+                </datalist><br>
+
+                <label for="icing">Icing Colour:</label>
+                <input type="color" id="icing" name="icing"><br>
+
+                <label for="sweetness">Sweetness Level (1-5):</label>
+                <input type="range" id="sweetness" name="sweetness" min="1" max="5" step="1"><br>
+
+                <!-- 6. Price Calculator -->
+                <label for="cupcakes">Cupcakes (RM 3.00 each):</label>
+                <input type="number" id="cupcakes" name="cupcakes" min="0" value="0"><br>
+
+                <label for="slices">Cake Slices (RM 5.00 each):</label>
+                <input type="number" id="slices" name="slices" min="0" value="0"><br>
+
+                Total Price: RM <output name="total" for="cupcakes slices">0</output><br>
+
+                <input type="submit" value="Place Order">
+            </form>
+        </div>
+    </div>
+
+    <div id="footer">
+        <!-- 4. HTML Entities in Footer -->
+        <p>&copy; 2026 CampusBake&reg;. All rights reserved. &nbsp; Value matches &euro; and &pound; equivalents.</p>
+    </div>
+
+    <!-- 7. Comments / Testing Observation:
+         1. Clicking Submit with all fields empty prompts the browser to focus on the first required field (Name) and display a "Please fill out this field" tooltip.
+         2. Entering "myemail" in the e-mail field and submitting triggers HTML5 validation stating "Please include an '@' in the email address."
+    -->
+</body>
+</html>
